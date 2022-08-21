@@ -18,3 +18,6 @@ add_executable(Avery
     src/main.c)
 
 target_link_libraries(Avery ${GTK3_LIBRARIES})
+
+#Right now, just have the debug symbols enabled by default.
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -pedantic -g")
