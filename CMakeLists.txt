@@ -9,9 +9,12 @@ pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
 include_directories(${GTK3_INCLUDE_DIRS})
 link_directories(${GTK3_LIBRARY_DIRS})
 
+include_directories(include)
+
 add_definitions(${GTK3_CFLAGS_OTHER})
 
 add_executable(Avery
+    src/gui/mainwindow.c
     src/main.c)
 
 target_link_libraries(Avery ${GTK3_LIBRARIES})
