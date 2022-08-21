@@ -1,5 +1,5 @@
 # Avery
-Avery is an vector animation program written in C. It is very similar to, but not entirely, Adobe Animate and the older Macromedia Flash.
+Avery is an vector animation program written in C. It is very similar to, but not entirely, Adobe Animate and the older Macromedia Flash. Despite being promoted right now as a vector based program, adding in raster and bitmap capabilities later is not out of the question for the time being.
 
 # Goals
 - Make web games.
