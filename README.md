@@ -1,11 +1,17 @@
 # Avery
-Avery is an animation program written in C.
+Avery is an vector animation program written in C. It is very similar to, but not entirely, Adobe Animate and the older Macromedia Flash.
+
+# Goals
+- Make web games.
+- Make vector based animation.
+- Make interactive content for the web.
+- Be entirely free (as in freedom) software.
+- Be able to import raster based images made in another program such as krita.
 
 # Dependencies
 There are the following dependencies:
 1. GTK3 (Required for runtime)
 2. Cairo (Required for runtime (Not yet, will in the future))
-3. libmypaint (Required for runtime (Not yet, will in the future))
 4. CMake (Requiring for building)
 5. A build system of your choice such as GNU Make or ninja (Required for building)
 
