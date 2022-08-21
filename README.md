@@ -18,6 +18,9 @@ To build, at the root of the project run the following:
 Avery is licensed under the terms of the GNU General Public License version 3.0 or greater. See COPYING for more information about the license. While this has not happened yet, but because there is a possibility some parts may be licensed under the GNU Lesser General Public License version 3.0 (or greater), COPYING.LESSER has been included so you may know how it is different from GPLv3.
 
 
+# TODO
+Right now I just want to get the basic UI setup. I'm using GIMP as a big reference for code and GTK widget usage, so a big thank you to GIMP. I don't know how the overall UI will look like, but it will for the time being look similar to GIMP.
+
 
 
 
