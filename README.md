@@ -29,7 +29,7 @@ I am working on getting the UI sorted out. I don't know right now how to layout 
 ![GIMP](https://raw.githubusercontent.com/AveryOfficial/Avery/main/screenshots/GIMP_2.10.jpg)
 
 As well as Macromedia Flash Professional 8 which I'll admit I have nostalgia for.
-![MACROMEDIAFLASH](https://raw.githubusercontent.com/AveryOfficial/Avery/main/screenshots/Macromedia-Flash-8.png)
+![MACROMEDIA](https://raw.githubusercontent.com/AveryOfficial/Avery/main/screenshots/Macromedia.png)
 
 The UI again, is a work in progress, but I aim right now to be based off the two listed programs.
 
