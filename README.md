@@ -7,7 +7,7 @@ You need a C compiler such as gcc or clang to build along with meson as well as 
 
 You only need meson, gcc or clang, and ninja if you wish to build or modify the program and then build it. They are not required for running it.
 
-#Building
+# Building
 To build, at the root of the project run: `meson setup bin` and then cd to the bin directory `cd bin` and run `meson compile`.
 
 # License
