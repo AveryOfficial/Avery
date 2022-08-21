@@ -2,10 +2,13 @@
 Avery is an animation program written in C.
 
 # Dependencies
-You need a C compiler such as gcc or clang to build along with CMake as well as a build system such as ninja or GNU Make. The following dependencies are required for running the program:
-1. GTK3
+There are the following dependencies:
+1. GTK3 (Required for runtime)
+2. Cairo (Required for runtime (Not yet, will in the future))
+3. libmypaint (Required for runtime (Not yet, will in the future))
+4. CMake (Requiring for building)
+5. A build system of your choice such as GNU Make or ninja (Required for building)
 
-You only need CMake, gcc or clang, and an additional build system if you wish to build or modify the program and then build it. They are not required for running it.
 
 # Building
 To build, at the root of the project run the following:
