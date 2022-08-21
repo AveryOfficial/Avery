@@ -12,3 +12,6 @@ To build, at the root of the project run: `meson setup bin` and then cd to the b
 
 # License
 This program is licensed under the terms of the GNU General Public License version 3.0. See LICENSE for more details about the license and how you can follow it.
+
+
+I hope you find this program to be useful. Don't hesitate to send a PR or open an issue if you have something that would be useful for the project.
