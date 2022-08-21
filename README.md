@@ -11,7 +11,7 @@ Avery is an vector animation program written in C. It is very similar to, but no
 # Dependencies
 There are the following dependencies:
 1. GTK3 (Required for runtime)
-2. Cairo (Required for runtime (Not yet, will in the future))
+2. Cairo (Required for runtime)
 4. CMake (Requiring for building)
 5. A build system of your choice such as GNU Make or ninja (Required for building)
 
