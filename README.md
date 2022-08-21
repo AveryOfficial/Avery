@@ -12,6 +12,10 @@ To build, at the root of the project run the following:
 `cmake -B bin -S . -G "<Build system of your choice>"` replacing <> with whatever build system you want such as GNU Make or ninja. Lets say you wanted to use GNU Makefiles, you would run `cmake -B bin -S . -G "Unix Makefiles"` Then `cd bin` and if for example you decided on makefiles, just run `make`.
 
 # License
-This program is licensed under the terms of the GNU General Public License version 3.0. See LICENSE for more details about the license and how you can follow it.
+Avery is licensed under the terms of the GNU General Public License version 3.0 or greater. See COPYING for more information about the license. While this has not happened yet, but because there is a possibility some parts may be licensed under the GNU Lesser General Public License version 3.0 (or greater), COPYING.LESSER has been included so you may know how it is different from GPLv3.
+
+
+
+
 
 I hope you find this program to be useful. Don't hesitate to send a PR or open an issue if you have something that would be useful for the project.
