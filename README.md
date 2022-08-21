@@ -21,6 +21,8 @@ Avery is licensed under the terms of the GNU General Public License version 3.0 
 # TODO
 Right now I just want to get the basic UI setup. I'm using GIMP as a big reference for code and GTK widget usage, so a big thank you to GIMP. I don't know how the overall UI will look like, but it will for the time being look similar to GIMP.
 
+I am not saying it will be a 1:1 copy of GIMP, just a quick GIMP like UI and will make many changes later. If you're not familiar with GIMP, here's a picture of it:
+![GIMP](https://raw.githubusercontent.com/AveryOfficial/Avery/main/screenshots/GIMP_2.10.jpg)
 
 
 
