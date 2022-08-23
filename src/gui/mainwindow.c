@@ -5,10 +5,7 @@
 //What you will be drawing on
 static cairo_t *Surface = NULL;
 
-
-//The Cairo stuff right now is from an online example, will have to clean it up later because it's extremely basic.
-
-//This clears the surface
+//Still need to fix up these functions later.
 static void SurfaceClear(void) {
     cairo_t *CR;
 
@@ -21,8 +18,7 @@ static void SurfaceClear(void) {
     cairo_destroy(CR);
 }
 
-//Draws the surface
-static gboolean ConfigureEventCB(GtkWidget *Widget, GdkEventConfigure *Event, gpointer UserData) {
+static gboolean DrawingAreaCB(GtkWidget *Widget, GdkEventConfigure *Event, gpointer UserData) {
     cairo_surface_t *OldSurface = Surface;
     cairo_t *CR;
     Surface = gdk_window_create_similar_surface(gtk_widget_get_window(Widget), CAIRO_CONTENT_COLOR, gdk_screen_width(), gdk_screen_height());
@@ -48,12 +44,9 @@ static gboolean DrawCB(GtkWidget *Widget, cairo_t *CR,gpointer UserData) {
     return FALSE;
 }
 
-
-
-//Draw a rectangle on the surface on any given position
 static void DrawingBrush(GtkWidget *Widget,
         gdouble x, gdouble y) {
-    cairo_t *CR;
+        cairo_t *CR;
 
         CR = cairo_create(Surface);
 
@@ -81,9 +74,6 @@ static gboolean ButtonPressEventCB(GtkWidget *Widget,
 
 
 
-
-
-
 void InitUI(GtkApplication *App, gpointer UserData) {
      
     GtkWidget *Window;
@@ -95,6 +85,19 @@ void InitUI(GtkApplication *App, gpointer UserData) {
 
     GtkWidget *FMI; //File Menu Entry
     GtkWidget *QMI; //Quit Menu Entry
+
+    GtkWidget *DrawingArea;
+
+    g_signal_connect(G_OBJECT(DrawingArea), "draw",
+		     G_CALLBACK(DrawCB), NULL);
+    g_signal_connect(G_OBJECT(DrawingArea), "configure-event",
+		     G_CALLBACK(DrawingAreaCB), NULL);
+
+   // g_signal_connect(DrawingArea, "motion-notify-event",
+	//	     G_CALLBACK(motion_notify_event_cb), NULL);
+
+    g_signal_connect(DrawingArea, "button-press-event",
+		     G_CALLBACK(ButtonPressEventCB), NULL);
     
     VBox = gtk_vbox_new(FALSE, 0);
     Window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
